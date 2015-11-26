@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Forms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Rubro</th>
+      <th>Numero trabajador</th>
+      <th>Numero recien egresado</th>
+      <th>Imprecion egresado</th>
+      <th>Interes egresado</th>
+      <th>Gastos anuale reclutamiento</th>
+      <th>Tiempo reclutamiento</th>
+      <th>Dificultad encontrar candidato</th>
+      <th>Interes pagina</th>
+      <th>Portal utilizado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @forms.each do |form| %>
+      <tr>
+        <td><%= form.nombre %></td>
+        <td><%= form.rubro %></td>
+        <td><%= form.numero_trabajador %></td>
+        <td><%= form.numero_recien_egresado %></td>
+        <td><%= form.imprecion_egresado %></td>
+        <td><%= form.interes_egresado %></td>
+        <td><%= form.gastos_anuale_reclutamiento %></td>
+        <td><%= form.tiempo_reclutamiento %></td>
+        <td><%= form.dificultad_encontrar_candidato %></td>
+        <td><%= form.interes_pagina %></td>
+        <td><%= form.portal_utilizado %></td>
+        <td><%= link_to 'Show', form %></td>
+        <td><%= link_to 'Edit', edit_form_path(form) %></td>
+        <td><%= link_to 'Destroy', form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Form', new_form_path %>

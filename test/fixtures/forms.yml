@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  rubro: MyString
+  numero_trabajador: MyString
+  numero_recien_egresado: MyString
+  imprecion_egresado: MyString
+  interes_egresado: MyString
+  gastos_anuale_reclutamiento: MyString
+  tiempo_reclutamiento: MyString
+  dificultad_encontrar_candidato: MyString
+  interes_pagina: MyString
+  portal_utilizado: MyString
+
+two:
+  nombre: MyString
+  rubro: MyString
+  numero_trabajador: MyString
+  numero_recien_egresado: MyString
+  imprecion_egresado: MyString
+  interes_egresado: MyString
+  gastos_anuale_reclutamiento: MyString
+  tiempo_reclutamiento: MyString
+  dificultad_encontrar_candidato: MyString
+  interes_pagina: MyString
+  portal_utilizado: MyString
